@@ -1,0 +1,31 @@
+{
+    "name": "synergitech/laravel-weasyprint",
+    "description": "This library integrates WeasyPrint with Laravel.",
+    "keywords": [
+        "Laravel",
+        "WeasyPrint",
+        "PDF"
+    ],
+    "homepage": "https://github.com/synergitech/laravel-weasyprint",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": ">=5.5.0",
+        "symfony/process": ">=4.1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SynergiTech\\WeasyPrint\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SynergiTech\\WeasyPrint\\WeasyPrintServiceProvider"
+            ],
+            "aliases": {
+                "WeasyPrint": "SynergiTech\\WeasyPrint\\Facades\\WeasyPrint"
+            }
+        }
+    }
+}
